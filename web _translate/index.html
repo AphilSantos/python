@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>The Santos Family</title>
+</head>
+<body>
+    <h1>The Santos Family</h1>
+    <label for="total-amount">Total Amount:</label>
+    <input type="number" id="total-amount" step="0.01">
+    <label for="num-siblings">Number of Siblings:</label>
+    <input type="number" id="num-siblings">
+    <button onclick="generateSiblingInputs()">Set Number of Siblings</button>
+
+    <div id="siblings-container"></div>
+
+    <button onclick="calculateShares()" style="display:none;" id="calculate-button">Calculate Shares</button>
+    <div id="result"></div>
+    <div id="total"></div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
